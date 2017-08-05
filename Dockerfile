@@ -1,6 +1,7 @@
-FROM alpine:latest
+FROM alpine:3.6
+LABEL maintainer "Kyle Lucy <kmlucy@gmail.com>"
 
-ADD start.sh /start.sh
+COPY start.sh /start.sh
 
 RUN apk add --no-cache samba samba-common-tools && chmod +x /start.sh
 
