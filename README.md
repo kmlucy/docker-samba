@@ -16,6 +16,6 @@ docker run \
 	-v /opt/samba/smb.conf:/etc/samba/smb.conf:ro \
 	-v /data:/data \
 	-p 139:139 -p 445:445 \
-	kmlucy/docker-samba
+	ghcr.io/kmlucy/docker-samba
 ```
 	
